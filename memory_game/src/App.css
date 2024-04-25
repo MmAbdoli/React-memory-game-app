@@ -1,0 +1,69 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+.timer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.disable{
+  background-color: #787a9145;
+  color: #eeeeee6c;
+}
+.disable:hover{
+  box-shadow: none;
+  background-color: #787a9145;
+  background: #787a9145;
+  color: #eeeeee6c;
+}
+.game__items{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  margin-inline: 2rem;
+  margin-top: 0;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.item__box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9153F4;
+  height: 100px;
+  width: 100px;
+  margin-top:30px ;
+  margin-inline: auto;
+  border-radius: 30px;
+  transition: 1s;
+}
+.item__box.matched{
+  height: 50px;
+  margin-top: 50px;
+  width: 100px;
+  box-shadow: 5px 5px 30px #fefcffb6 ,-5px -5px 30px #a621cec4;
+}
+.item__box.check{
+  box-shadow: -5px -5px 30px #a6c0dbe2 ,5px 5px 30px #113cc9;
+  padding: 3px;
+}
+
+
+
+.game__image{
+  height: 100px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+
+@media (min-width: 720px) {
+  .game__items{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 720px;
+  }
+  
+}
